@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@font-face{
+    font-family:Hussar;
+    src:url("../fonts/Fonts/hussarbdwide.otf")
+}
+
+body{
+    font-size:16px;
+    font-family:Hussar;
+    width:100%;
+    color:#2D2D37;
+    height:100vh;
+}
+
+/* clases reutilizable */
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+    color:#878789;
+    font-weight:900;
+}
+
+.big-grey{
+    margin-left:0.2em;
+    font-size:1.2em;
+}
+
+.small-grey{
+    margin-top:0.8em;
+    font-size:0.8em;
+}
+
+
+/*Imagenes de fondo*/
+
+.top-image{
+    position:absolute;
+    background-image:url('../images/bg-pattern-top.svg');
+    background-position:bottom right;
+    width:50%;
+    height:50%;
+}
+
+.bottom-image{
+    position:absolute;
+    background-image:url('../images/bg-pattern-bottom.svg');
+    width:50%;
+    height:50%;
+    bottom:0;
+    right:0;
+}
+
+/*container*/
+
+.container{
+    width:100%;
+    height:98%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(25,161,173);
+    
+}
+
+/* card*/
+
+.card{
+    width:360px;
+    background-color:#fff;
+    border-radius:10px;
+    height:390px;
+    overflow:hidden;
+    position:relative;
+}
+    /* card header */
+
+    .card-header{
+        width:100%;
+        height:140px;
+        background-image:url('../images/bg-pattern-card.svg');
+        background-size:cover;
+
+    }
+
+    /* profile picture */
+
+    .victor-container{
+        position: absolute;
+        width: 99px;
+        height: 99px;
+        border-radius: 50px;
+        /* margin: 0 auto; */
+        top: 89px;
+        border-radius:50px;
+        background-color:#fff;
+        overflow:hidden;
+        padding:4px;
+        left: 0;
+        right:0;
+        bottom:0;
+        margin:0 auto;
+    }
+
+    .victor{
+        background-image:url('../images/image-victor.jpg');
+        background-position:50% 50%;
+        background-repeat:no-repeat;
+        background-size:cover;
+        width:100%;
+        height:100%;
+        border-radius:50px;
+    
+    }
+
+    /* card body */
+
+    .card-body{
+        min-height:160px;
+        width:100%;
+        display:flex;
+        align-items:center;
+    }
+        /* body text */
+        .text-victor{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            margin-top:2em
+        }
+
+        
+
+
+    /* card footer */
+
+    .card-footer{
+        border-top:1px solid #878789;
+        display:flex;
+        justify-content:space-around;
+        height:80px;
+    }
+        .counter{
+            margin-top:1.3em;
+            text-align:center;
+        }
+    
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media(max-width:600px){
+    .top-image{
+        width:55%;
+        top:0;
+    }
+
+    .bottom-image{
+        width:65%;
+    }
+}
+
